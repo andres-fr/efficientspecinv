@@ -16,4 +16,14 @@ Each column represents a model used to generate the WAV directly from the STFT m
 * **Strided + LA**: The strided variation of our proposed method, with one frame of lookahead
 * **Strided**: The strided variation of our proposed method, without lookahead
 
-See our paper for more details.
+
+See our paper for more details:
+
+```
+@inproceedings{efficientspecinv,
+      title={Efficient Neural and Numerical Methods for High-Quality Online Speech Spectrogram Inversion via {G}radient {T}heorem},
+      author={Fernandez, Andres and Azcarreta Ortiz, Juan and Bilen, Cagdas and M Alvarez, Jesus},
+      booktitle={{InterSpeech}},
+      year={2025},
+}
+```
