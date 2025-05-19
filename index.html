@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Audio samples for our paper: “Efficient Neural and Numerical Methods for High-Quality Online Speech Spectrogram Inversion via Gradient Theorem” | audio_samples</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Audio samples for our paper: “Efficient Neural and Numerical Methods for High-Quality Online Speech Spectrogram Inversion via Gradient Theorem”" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Audio samples for our paper: “Efficient Neural and Numerical Methods for High-Quality Online Speech Spectrogram Inversion via Gradient Theorem”" />
+<meta property="og:description" content="Audio samples for our paper: “Efficient Neural and Numerical Methods for High-Quality Online Speech Spectrogram Inversion via Gradient Theorem”" />
+<link rel="canonical" href="https://anon782.github.io/audio_samples/" />
+<meta property="og:url" content="https://anon782.github.io/audio_samples/" />
+<meta property="og:site_name" content="audio_samples" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Audio samples for our paper: “Efficient Neural and Numerical Methods for High-Quality Online Speech Spectrogram Inversion via Gradient Theorem”" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Audio samples for our paper: “Efficient Neural and Numerical Methods for High-Quality Online Speech Spectrogram Inversion via Gradient Theorem”","headline":"Audio samples for our paper: “Efficient Neural and Numerical Methods for High-Quality Online Speech Spectrogram Inversion via Gradient Theorem”","name":"audio_samples","url":"https://anon782.github.io/audio_samples/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/audio_samples/assets/css/style.css?v=9e96bb28dbcfa8233815a45a1f0a1a4388f9b3b9">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/audio_samples/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://anon782.github.io/audio_samples/">audio_samples</a></h1>
+      
+
+      <h1 id="audio-samples-for-our-paper-efficient-neural-and-numerical-methods-for-high-quality-online-speech-spectrogram-inversion-via-gradient-theorem">Audio samples for our paper: “Efficient Neural and Numerical Methods for High-Quality Online Speech Spectrogram Inversion via Gradient Theorem”</h1>
+
+<p>This webpage provides representative audio samples for clean speech data in WAV format.
+Each row represents one random fragment from the Librispeech clean test split.
+Each column represents a model used to generate the WAV directly from the STFT magnitude spectrogram:</p>
+<ul>
+  <li><strong>Ground truth:</strong> A perfect reconstruction via inverse STFT using ground truth magnitudes and phases</li>
+  <li><strong>Proposed</strong>: Our proposed method with efficient first and second stage</li>
+  <li><strong>Prev. + Thomas</strong>: The result of applying our proposed second stage to the <a href="https://ieeexplore.ieee.org/document/9944900">previously proposed CNN</a></li>
+  <li><strong>Prev + direct</strong>: The result of applying a direct solver to the <a href="https://ieeexplore.ieee.org/document/9944900">previously proposed CNN</a></li>
+  <li><strong>VOCOS</strong>: “Copy-synthesis” function using the VOCOS API and pretrained model, as prescribed in the <a href="https://github.com/gemelo-ai/vocos">official repository</a></li>
+  <li><strong>RTISI (50 iter.)</strong>: 50-iteration RTISI (<a href="https://pypi.org/project/torch-specinv">implementation</a>)</li>
+  <li><strong>RTISI (5 iter.)</strong>: 5-iteration RTISI (<a href="https://pypi.org/project/torch-specinv">implementation</a>)</li>
+  <li><strong>Strided + LA</strong>: The strided variation of our proposed method, with one frame of lookahead</li>
+  <li><strong>Strided</strong>: The strided variation of our proposed method, without lookahead</li>
+</ul>
+
+<p>See our paper for more details.</p>
+
+<h1 id="audio-table">Audio Table</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ground Truth</th>
+      <th><strong>Proposed</strong></th>
+      <th>Prev. + <strong>Thomas</strong></th>
+      <th>Prev. + direct</th>
+      <th>VOCOS</th>
+      <th>RTISI (50 iter.)</th>
+      <th>RTISI (5 iter.)</th>
+      <th>Strided + LA</th>
+      <th>Strided</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/ground_truth/ground_truth_00001.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/proposed/proposed_00001.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous_with_thomas/previous_with_thomas_00001.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous/previous_00001.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/VOCOS/VOCOS_00001.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_50_iter/RTISI_50_iter_00001.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_5_iter/RTISI_5_iter_00001.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_with_lookahead/strided_with_lookahead_00001.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_without_lookahead/strided_without_lookahead_00001.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+    </tr>
+    <tr>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/ground_truth/ground_truth_00002.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/proposed/proposed_00002.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous_with_thomas/previous_with_thomas_00002.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous/previous_00002.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/VOCOS/VOCOS_00002.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_50_iter/RTISI_50_iter_00002.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_5_iter/RTISI_5_iter_00002.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_with_lookahead/strided_with_lookahead_00002.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_without_lookahead/strided_without_lookahead_00002.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+    </tr>
+    <tr>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/ground_truth/ground_truth_00003.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/proposed/proposed_00003.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous_with_thomas/previous_with_thomas_00003.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous/previous_00003.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/VOCOS/VOCOS_00003.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_50_iter/RTISI_50_iter_00003.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_5_iter/RTISI_5_iter_00003.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_with_lookahead/strided_with_lookahead_00003.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_without_lookahead/strided_without_lookahead_00003.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+    </tr>
+    <tr>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/ground_truth/ground_truth_00004.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/proposed/proposed_00004.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous_with_thomas/previous_with_thomas_00004.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous/previous_00004.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/VOCOS/VOCOS_00004.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_50_iter/RTISI_50_iter_00004.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_5_iter/RTISI_5_iter_00004.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_with_lookahead/strided_with_lookahead_00004.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_without_lookahead/strided_without_lookahead_00004.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+    </tr>
+    <tr>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/ground_truth/ground_truth_00005.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/proposed/proposed_00005.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous_with_thomas/previous_with_thomas_00005.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous/previous_00005.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/VOCOS/VOCOS_00005.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_50_iter/RTISI_50_iter_00005.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_5_iter/RTISI_5_iter_00005.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_with_lookahead/strided_with_lookahead_00005.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_without_lookahead/strided_without_lookahead_00005.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+    </tr>
+    <tr>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/ground_truth/ground_truth_00006.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/proposed/proposed_00006.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous_with_thomas/previous_with_thomas_00006.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous/previous_00006.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/VOCOS/VOCOS_00006.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_50_iter/RTISI_50_iter_00006.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_5_iter/RTISI_5_iter_00006.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_with_lookahead/strided_with_lookahead_00006.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_without_lookahead/strided_without_lookahead_00006.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+    </tr>
+    <tr>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/ground_truth/ground_truth_00007.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/proposed/proposed_00007.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous_with_thomas/previous_with_thomas_00007.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous/previous_00007.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/VOCOS/VOCOS_00007.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_50_iter/RTISI_50_iter_00007.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_5_iter/RTISI_5_iter_00007.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_with_lookahead/strided_with_lookahead_00007.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_without_lookahead/strided_without_lookahead_00007.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+    </tr>
+    <tr>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/ground_truth/ground_truth_00008.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/proposed/proposed_00008.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous_with_thomas/previous_with_thomas_00008.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous/previous_00008.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/VOCOS/VOCOS_00008.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_50_iter/RTISI_50_iter_00008.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_5_iter/RTISI_5_iter_00008.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_with_lookahead/strided_with_lookahead_00008.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_without_lookahead/strided_without_lookahead_00008.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+    </tr>
+    <tr>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/ground_truth/ground_truth_00009.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/proposed/proposed_00009.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous_with_thomas/previous_with_thomas_00009.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous/previous_00009.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/VOCOS/VOCOS_00009.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_50_iter/RTISI_50_iter_00009.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_5_iter/RTISI_5_iter_00009.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_with_lookahead/strided_with_lookahead_00009.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_without_lookahead/strided_without_lookahead_00009.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+    </tr>
+    <tr>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/ground_truth/ground_truth_00010.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/proposed/proposed_00010.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous_with_thomas/previous_with_thomas_00010.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/previous/previous_00010.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/VOCOS/VOCOS_00010.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_50_iter/RTISI_50_iter_00010.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/RTISI_5_iter/RTISI_5_iter_00010.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_with_lookahead/strided_with_lookahead_00010.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls preload="none" style="width: 200px;"><source src="wav/strided_without_lookahead/strided_without_lookahead_00010.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+    </tr>
+  </tbody>
+</table>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
