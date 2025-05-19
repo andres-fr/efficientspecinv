@@ -1,7 +1,7 @@
 # Audio samples for our paper: "Efficient Neural and Numerical Methods for High-Quality Online Speech Spectrogram Inversion via Gradient Theorem"
 
-* Website: https://anon782.github.io/audio_samples/
-* Git repository: https://github.com/anon782/audio_samples
+* Website: https://andres-fr.github.io/efficientspecinv
+* Git repository: https://github.com/andres-fr/efficientspecinv
 
 This webpage provides representative audio samples for clean speech data in WAV format.
 Each row represents one random fragment from the Librispeech clean test split.
