@@ -1,6 +1,7 @@
 # Audio samples for our paper: "Efficient Neural and Numerical Methods for High-Quality Online Speech Spectrogram Inversion via Gradient Theorem"
 
-* Website: https://andres-fr.github.io/efficientspecinv
+* Blog: https://aferro.dynu.net/research_engineering/real_time_spectrogram_inversion/
+* Audio samples: https://andres-fr.github.io/efficientspecinv
 * Git repository: https://github.com/andres-fr/efficientspecinv
 
 This webpage provides representative audio samples for clean speech data in WAV format.
@@ -20,10 +21,13 @@ Each column represents a model used to generate the WAV directly from the STFT m
 See our paper for more details:
 
 ```
-@inproceedings{efficientspecinv,
-      title={Efficient Neural and Numerical Methods for High-Quality Online Speech Spectrogram Inversion via {G}radient {T}heorem},
-      author={Fernandez, Andres and Azcarreta Ortiz, Juan and Bilen, Cagdas and M Alvarez, Jesus},
-      booktitle={{InterSpeech}},
-      year={2025},
+@inproceedings{fernandez25_interspeech,
+  title     = {{Efficient Neural and Numerical Methods for High-Quality Online Speech Spectrogram Inversion via Gradient Theorem}},
+  author    = {Fernandez, Andres and Azcarreta Ortiz, Juan and Bilen, Çağdaş and Monge Alvarez, Jesus},
+  year      = {2025},
+  booktitle = {{Interspeech 2025}},
+  pages     = {3449--3453},
+  doi       = {10.21437/Interspeech.2025-439},
+  issn      = {2958-1796},
 }
 ```
